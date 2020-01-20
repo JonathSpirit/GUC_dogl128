@@ -5,13 +5,19 @@
 * GUC_DogL128 LIB       *
 |***********************|
 * Author : Guillaume G. *
-* Version : 1.0         *
-* Date : 31.10.2018     *
+* Version : 1.1         *
+* Date : 20.01.2020     *
 \***********************/
 
-/* CHANGELOG 1.0
+/*
+CHANGELOG 1.0
 
 - Creating the LIB
+
+CHANGELOG 1.1
+
+- Adding "GUC_dog_setStat"
+- Setting default output to "GUC_DOG_CFG_OUTPUT_SPISIMULATE"
 */
 
 
@@ -37,7 +43,7 @@ Set the output mod of the uc.
    Choose the internal SPI (3 wire master)
    - Faster but no manipulable PIN
 */
-#define GUC_DOG_CFG_OUTPUT GUC_DOG_CFG_OUTPUT_SPI3WIRE
+#define GUC_DOG_CFG_OUTPUT GUC_DOG_CFG_OUTPUT_SPISIMULATE
 
 
 /*********************************
