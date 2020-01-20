@@ -1,0 +1,6 @@
+".\Objects\STARTUP.obj",
+".\Objects\config.obj",
+".\Objects\main.obj",
+".\Objects\GUC_dogl128.obj" 
+TO ".\Objects\GUC_dogl128_exemple" 
+PRINT(".\Listings\GUC_dogl128_exemple.m51") RAMSIZE(256) 

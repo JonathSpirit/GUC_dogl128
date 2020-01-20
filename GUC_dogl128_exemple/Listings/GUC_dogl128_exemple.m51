@@ -1,0 +1,481 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    01/20/2020  15:24:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\config.obj, .\Objects\main.obj, .\Objects\GUC_dogl128.obj T
+>> O .\Objects\GUC_dogl128_exemple PRINT (.\Listings\GUC_dogl128_exemple.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\config.obj (CONFIG)
+  .\Objects\main.obj (MAIN)
+  .\Objects\GUC_dogl128.obj (GUC_DOGL128)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+
+
+LINK MAP OF MODULE:  .\Objects\GUC_dogl128_exemple (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         ?DT?_GUC_DOG_CHARWRITE?GUC_DOGL128
+            DATA    000DH     0005H     UNIT         ?DT?_GUC_DOG_PSTRINGWRITE?GUC_DOGL128
+            DATA    0012H     0004H     UNIT         ?DT?_GUC_DOG_STRINGWRITE?GUC_DOGL128
+            DATA    0016H     0003H     UNIT         ?DT?_GUC_DOG_CLEARSCREEN?GUC_DOGL128
+            DATA    0019H     0002H     UNIT         ?DT?_WAIT_MS?MAIN
+            DATA    001BH     0002H     UNIT         ?DT?_GUC_DOG_SENDBYTE?GUC_DOGL128
+            DATA    001DH     0002H     UNIT         ?DT?_GUC_DOG_SETCURSORPOS?GUC_DOGL128
+                    001FH     0001H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?_GUC_DOG_SENDBYTE?GUC_DOGL128
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     0003H     UNIT         ?XD?GUC_DOGL128
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     01E3H     UNIT         ?CO?GUC_DOGL128
+            CODE    01E6H     00B0H     UNIT         ?PR?MAIN?MAIN
+            CODE    0296H     0095H     UNIT         ?PR?_GUC_DOG_CHARWRITE?GUC_DOGL128
+            CODE    032BH     008CH     UNIT         ?C_C51STARTUP
+            CODE    03B7H     0070H     UNIT         ?PR?GUC_DOG_INIT?GUC_DOGL128
+            CODE    0427H     0053H     UNIT         ?CO?MAIN
+            CODE    047AH     004EH     UNIT         ?PR?_GUC_DOG_CLEARSCREEN?GUC_DOGL128
+            CODE    04C8H     0046H     UNIT         ?C?LIB_CODE
+            CODE    050EH     0045H     UNIT         ?PR?_GUC_DOG_SENDBYTE?GUC_DOGL128
+            CODE    0553H     0036H     UNIT         ?PR?_GUC_DOG_PSTRINGWRITE?GUC_DOGL128
+            CODE    0589H     002FH     UNIT         ?PR?_GUC_DOG_STRINGWRITE?GUC_DOGL128
+            CODE    05B8H     002CH     UNIT         ?PR?_GUC_DOG_SETCURSORPOS?GUC_DOGL128
+            CODE    05E4H     0024H     UNIT         ?PR?_WAIT_MS?MAIN
+            CODE    0608H     0019H     UNIT         ?PR?TIMER5INIT?MAIN
+            CODE    0621H     000DH     UNIT         ?PR?INIT_DEVICE?CONFIG
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 2
+
+
+            CODE    062EH     0007H     UNIT         ?PR?PCA_INIT?CONFIG
+            CODE    0635H     0007H     UNIT         ?PR?PORT_IO_INIT?CONFIG
+            CODE    063CH     0007H     UNIT         ?C_INITSEG
+            CODE    0643H     0004H     UNIT         ?PR?VOLTAGE_REFERENCE_INIT?CONFIG
+            CODE    0647H     0004H     UNIT         ?PR?OSCILLATOR_INIT?CONFIG
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\GUC_dogl128_exemple (?C_STARTUP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?INIT_DEVICE?CONFIG
+  +--> ?PR?TIMER5INIT?MAIN
+  +--> ?PR?GUC_DOG_INIT?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_CLEARSCREEN?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_SETCURSORPOS?GUC_DOGL128
+  +--> ?CO?MAIN
+  +--> ?PR?_GUC_DOG_STRINGWRITE?GUC_DOGL128
+  +--> ?PR?_WAIT_MS?MAIN
+
+?PR?INIT_DEVICE?CONFIG
+  +--> ?PR?PCA_INIT?CONFIG
+  +--> ?PR?VOLTAGE_REFERENCE_INIT?CONFIG
+  +--> ?PR?PORT_IO_INIT?CONFIG
+  +--> ?PR?OSCILLATOR_INIT?CONFIG
+
+?PR?GUC_DOG_INIT?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_SENDBYTE?GUC_DOGL128
+
+?PR?_GUC_DOG_CLEARSCREEN?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_SENDBYTE?GUC_DOGL128
+
+?PR?_GUC_DOG_SETCURSORPOS?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_SENDBYTE?GUC_DOGL128
+
+?PR?_GUC_DOG_STRINGWRITE?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_CHARWRITE?GUC_DOGL128
+
+?PR?_GUC_DOG_CHARWRITE?GUC_DOGL128
+  +--> ?PR?_GUC_DOG_SENDBYTE?GUC_DOGL128
+
+?C_INITSEG
+  +--> ?CO?GUC_DOGL128
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\GUC_dogl128_exemple (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 3
+
+
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:032BH         SEGMENT       ?C_C51STARTUP
+  I:0021H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:032EH         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:032BH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:032BH         LINE#         133
+  C:032DH         LINE#         134
+  C:032EH         LINE#         135
+  C:032FH         LINE#         136
+  C:0331H         LINE#         185
+  C:0334H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        CONFIG
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00E8H         PUBLIC        ADC0CN
+  D:00A8H         PUBLIC        IE
+  D:00A6H         PUBLIC        P2MDOUT
+  C:0635H         PUBLIC        Port_IO_Init
+  D:00D9H         PUBLIC        PCA0MD
+  D:00D8H         PUBLIC        PCA0CN
+  D:00B8H         PUBLIC        IP
+  C:0647H         PUBLIC        Oscillator_Init
+  D:00E2H         PUBLIC        XBR1
+  D:00D1H         PUBLIC        REF0CN
+  D:00C0H         PUBLIC        SMB0CN
+  D:00C0H         PUBLIC        SMB1CN
+  D:00F8H         PUBLIC        SPI0CN
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        TMR2CN
+  D:00C8H         PUBLIC        TMR5CN
+  D:00B2H         PUBLIC        OSCICN
+  C:0643H         PUBLIC        Voltage_Reference_Init
+  C:0621H         PUBLIC        Init_Device
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 4
+
+
+  C:062EH         PUBLIC        PCA_Init
+  D:0098H         PUBLIC        SCON0
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          PCA_INIT
+  C:062EH         LINE#         9
+  C:062EH         LINE#         10
+  C:062EH         LINE#         11
+  C:0631H         LINE#         12
+  C:0634H         LINE#         13
+  -------         ENDPROC       PCA_INIT
+  -------         PROC          VOLTAGE_REFERENCE_INIT
+  C:0643H         LINE#         15
+  C:0643H         LINE#         16
+  C:0643H         LINE#         17
+  C:0646H         LINE#         18
+  -------         ENDPROC       VOLTAGE_REFERENCE_INIT
+  -------         PROC          PORT_IO_INIT
+  C:0635H         LINE#         20
+  C:0635H         LINE#         21
+  C:0635H         LINE#         51
+  C:0638H         LINE#         52
+  C:063BH         LINE#         53
+  -------         ENDPROC       PORT_IO_INIT
+  -------         PROC          OSCILLATOR_INIT
+  C:0647H         LINE#         55
+  C:0647H         LINE#         56
+  C:0647H         LINE#         57
+  C:064AH         LINE#         58
+  -------         ENDPROC       OSCILLATOR_INIT
+  -------         PROC          INIT_DEVICE
+  C:0621H         LINE#         62
+  C:0621H         LINE#         63
+  C:0621H         LINE#         64
+  C:0624H         LINE#         65
+  C:0627H         LINE#         66
+  C:062AH         LINE#         67
+  C:062DH         LINE#         68
+  -------         ENDPROC       INIT_DEVICE
+  -------         ENDMOD        CONFIG
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00E8H         PUBLIC        ADC0CN
+  D:00BFH         PUBLIC        SFRPAGE
+  D:00A8H         PUBLIC        IE
+  D:00CBH         PUBLIC        TMR5RLH
+  D:00CAH         PUBLIC        TMR5RLL
+  D:00D8H         PUBLIC        PCA0CN
+  B:00C8H.7       PUBLIC        TF5H
+  D:00B8H         PUBLIC        IP
+  D:00E4H         PUBLIC        CKCON1
+  D:00C0H         PUBLIC        SMB0CN
+  D:00C0H         PUBLIC        SMB1CN
+  C:01E6H         PUBLIC        main
+  D:00F8H         PUBLIC        SPI0CN
+  D:0088H         PUBLIC        TCON
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 5
+
+
+  D:00C8H         PUBLIC        TMR2CN
+  D:00C8H         PUBLIC        TMR5CN
+  C:0608H         PUBLIC        Timer5Init
+  C:05E4H         PUBLIC        _Wait_ms
+  B:00C8H.2       PUBLIC        TR5
+  D:0098H         PUBLIC        SCON0
+  D:00CDH         PUBLIC        TMR5H
+  D:00CCH         PUBLIC        TMR5L
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:01E6H         LINE#         12
+  C:01E6H         LINE#         13
+  C:01E6H         LINE#         16
+  C:01E9H         LINE#         17
+  C:01ECH         LINE#         19
+  C:01EFH         LINE#         20
+  C:01F4H         LINE#         21
+  C:01FBH         LINE#         23
+  C:01FBH         LINE#         24
+  C:01FBH         LINE#         25
+  C:0202H         LINE#         26
+  C:020DH         LINE#         27
+  C:0214H         LINE#         28
+  C:021FH         LINE#         29
+  C:0226H         LINE#         30
+  C:0231H         LINE#         31
+  C:0238H         LINE#         32
+  C:0243H         LINE#         34
+  C:024AH         LINE#         35
+  C:0255H         LINE#         36
+  C:025CH         LINE#         37
+  C:0267H         LINE#         38
+  C:026EH         LINE#         39
+  C:0279H         LINE#         40
+  C:0280H         LINE#         41
+  C:028BH         LINE#         42
+  C:0292H         LINE#         44
+  -------         ENDPROC       MAIN
+  -------         PROC          _WAIT_MS
+  D:0019H         SYMBOL        ms
+  C:05E4H         LINE#         47
+  C:05E8H         LINE#         48
+  C:05E8H         LINE#         49
+  C:05EBH         LINE#         50
+  C:05EDH         LINE#         51
+  C:05F3H         LINE#         52
+  C:05F3H         LINE#         53
+  C:05F6H         LINE#         54
+  C:05FEH         LINE#         55
+  C:0600H         LINE#         56
+  C:0602H         LINE#         57
+  C:0604H         LINE#         58
+  C:0607H         LINE#         59
+  -------         ENDPROC       _WAIT_MS
+  -------         PROC          TIMER5INIT
+  C:0608H         LINE#         61
+  C:0608H         LINE#         62
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 6
+
+
+  C:0608H         LINE#         63
+  C:060BH         LINE#         64
+  C:060EH         LINE#         65
+  C:0611H         LINE#         66
+  C:0614H         LINE#         67
+  C:0617H         LINE#         68
+  C:061AH         LINE#         69
+  C:061DH         LINE#         70
+  C:0620H         LINE#         71
+  -------         ENDPROC       TIMER5INIT
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        GUC_DOGL128
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0589H         PUBLIC        _GUC_dog_stringWrite
+  D:00E8H         PUBLIC        ADC0CN
+  C:0296H         PUBLIC        _GUC_dog_charWrite
+  D:00A8H         PUBLIC        IE
+  B:00A0H.3       PUBLIC        GUC_DOG_CS
+  C:03B7H         PUBLIC        GUC_dog_init
+  D:00D8H         PUBLIC        PCA0CN
+  D:00B8H         PUBLIC        IP
+  C:050EH         PUBLIC        _GUC_dog_sendByte
+  C:0003H         PUBLIC        __gucdog_default_font
+  D:00C0H         PUBLIC        SMB0CN
+  D:00C0H         PUBLIC        SMB1CN
+  B:00A0H.0       PUBLIC        GUC_DOG_SCLK
+  D:00F8H         PUBLIC        SPI0CN
+  B:00A0H.2       PUBLIC        GUC_DOG_MOSI
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        TMR2CN
+  D:00C8H         PUBLIC        TMR5CN
+  C:047AH         PUBLIC        _GUC_dog_clearScreen
+  X:0000H         PUBLIC        __gucdog_font_data
+  C:05B8H         PUBLIC        _GUC_dog_setCursorPos
+  D:0098H         PUBLIC        SCON0
+  B:00A0H.4       PUBLIC        GUC_DOG_A0
+  C:0553H         PUBLIC        _GUC_dog_pstringWrite
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          GUC_DOG_INIT
+  C:03B7H         LINE#         313
+  C:03B7H         LINE#         314
+  C:03B7H         LINE#         315
+  C:03B9H         LINE#         316
+  C:03BBH         LINE#         318
+  C:03BDH         LINE#         321
+  C:03C4H         LINE#         322
+  C:03CBH         LINE#         323
+  C:03D2H         LINE#         324
+  C:03D9H         LINE#         325
+  C:03E0H         LINE#         326
+  C:03E7H         LINE#         327
+  C:03EEH         LINE#         328
+  C:03F5H         LINE#         329
+  C:03FCH         LINE#         330
+  C:0403H         LINE#         331
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 7
+
+
+  C:040AH         LINE#         332
+  C:0411H         LINE#         333
+  C:0418H         LINE#         334
+  C:041FH         LINE#         336
+  C:0426H         LINE#         337
+  -------         ENDPROC       GUC_DOG_INIT
+  -------         PROC          _GUC_DOG_SENDBYTE
+  D:001BH         SYMBOL        _byte
+  B:0020H.0       SYMBOL        _a0
+  -------         DO            
+  D:001CH         SYMBOL        i
+  -------         ENDDO         
+  C:050EH         LINE#         352
+  C:0510H         LINE#         353
+  C:0510H         LINE#         356
+  C:0514H         LINE#         358
+  C:0526H         LINE#         359
+  C:0526H         LINE#         360
+  C:054AH         LINE#         361
+  C:054CH         LINE#         362
+  C:054EH         LINE#         363
+  C:0552H         LINE#         364
+  -------         ENDPROC       _GUC_DOG_SENDBYTE
+  -------         PROC          _GUC_DOG_SETCURSORPOS
+  D:001DH         SYMBOL        _page
+  D:001EH         SYMBOL        _row
+  C:05B8H         LINE#         367
+  C:05BCH         LINE#         368
+  C:05BCH         LINE#         369
+  C:05CAH         LINE#         370
+  C:05D4H         LINE#         371
+  C:05E3H         LINE#         372
+  -------         ENDPROC       _GUC_DOG_SETCURSORPOS
+  -------         PROC          _GUC_DOG_CLEARSCREEN
+  D:0016H         SYMBOL        _value
+  -------         DO            
+  D:0017H         SYMBOL        page
+  D:0018H         SYMBOL        row
+  -------         ENDDO         
+  C:047AH         LINE#         374
+  C:047CH         LINE#         375
+  C:047CH         LINE#         378
+  C:048EH         LINE#         379
+  C:048EH         LINE#         380
+  C:0498H         LINE#         381
+  C:049FH         LINE#         382
+  C:04A6H         LINE#         383
+  C:04B8H         LINE#         384
+  C:04B8H         LINE#         385
+  C:04BFH         LINE#         386
+  C:04C3H         LINE#         387
+  C:04C7H         LINE#         388
+  -------         ENDPROC       _GUC_DOG_CLEARSCREEN
+  -------         PROC          _GUC_DOG_CHARWRITE
+  D:0008H         SYMBOL        _valueChar
+  D:0009H         SYMBOL        _invert
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  01/20/2020  15:24:49  PAGE 8
+
+
+  D:000AH         SYMBOL        x
+  D:000BH         SYMBOL        addressValue
+  -------         ENDDO         
+  C:0296H         LINE#         390
+  C:029AH         LINE#         391
+  C:029AH         LINE#         395
+  C:02B5H         LINE#         397
+  C:02D0H         LINE#         398
+  C:02D0H         LINE#         400
+  C:02D0H         LINE#         405
+  C:02E5H         LINE#         412
+  C:02F7H         LINE#         414
+  C:02F7H         LINE#         415
+  C:031FH         LINE#         416
+  C:0323H         LINE#         418
+  C:032AH         LINE#         419
+  -------         ENDPROC       _GUC_DOG_CHARWRITE
+  -------         PROC          _GUC_DOG_STRINGWRITE
+  D:0012H         SYMBOL        _str
+  D:0015H         SYMBOL        _invert
+  C:0589H         LINE#         421
+  C:0591H         LINE#         422
+  C:0591H         LINE#         423
+  C:059EH         LINE#         424
+  C:059EH         LINE#         425
+  C:05B5H         LINE#         426
+  C:05B7H         LINE#         427
+  -------         ENDPROC       _GUC_DOG_STRINGWRITE
+  -------         PROC          _GUC_DOG_PSTRINGWRITE
+  D:000DH         SYMBOL        _str
+  D:0010H         SYMBOL        _invert
+  -------         DO            
+  D:0011H         SYMBOL        i
+  -------         ENDDO         
+  C:0553H         LINE#         428
+  C:055BH         LINE#         429
+  C:055BH         LINE#         431
+  C:056EH         LINE#         432
+  C:056EH         LINE#         433
+  C:0584H         LINE#         434
+  C:0588H         LINE#         435
+  -------         ENDPROC       _GUC_DOG_PSTRINGWRITE
+  -------         ENDMOD        GUC_DOGL128
+
+  -------         MODULE        ?C?CLDPTR
+  C:04C8H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?CLDOPTR
+  C:04E1H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GUC_DOG_PSTRINGWRITE?GUC_DOGL128
+
+Program Size: data=32.1 xdata=3 code=1611
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,97 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              01/20/2020 15:24:49 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(0,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(3) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          /*
+   2          Author : Guillaume Guillet
+   3          Last modified : 20.01.2020
+   4          */
+   5          
+   6          #include "config.h"
+   7          #include "GUC_dogl128.h"
+   8          
+   9          void Wait_ms(unsigned int ms);
+  10          void Timer5Init();
+  11          
+  12          void main ()
+  13          {
+  14   1         
+  15   1         
+  16   1         Init_Device();
+  17   1         Timer5Init();
+  18   1         
+  19   1         GUC_dog_init();
+  20   1         GUC_dog_clearScreen(0);
+  21   1         GUC_dog_setCharPos(0, 0);
+  22   1         
+  23   1         while (1)
+  24   1         {
+  25   2            GUC_dog_setCharPos(0, 0);
+  26   2            GUC_dog_stringWrite("abcdefghijklmnopqrstu", 0);
+  27   2            GUC_dog_setCharPos(1, 0);
+  28   2            GUC_dog_stringWrite("vwxyz+\"*ç%&/()=?`^|~[]", 0);
+  29   2            GUC_dog_setCharPos(2, 0);
+  30   2            GUC_dog_stringWrite("ABCDEFGHIJKLMNOPQRSTU", 0);
+  31   2            GUC_dog_setCharPos(3, 0);
+  32   2            GUC_dog_stringWrite("VWXYZ1234567890", 0);
+  33   2            
+  34   2            GUC_dog_setCharPos(4, 0);
+  35   2            GUC_dog_stringWrite("abcdefghijklmnopqrstu", 0xff);
+  36   2            GUC_dog_setCharPos(5, 0);
+  37   2            GUC_dog_stringWrite("vwxyz+\"*ç%&/()=?`^|~[]", 0xff);
+  38   2            GUC_dog_setCharPos(6, 0);
+  39   2            GUC_dog_stringWrite("ABCDEFGHIJKLMNOPQRSTU", 0xff);
+  40   2            GUC_dog_setCharPos(7, 0);
+  41   2            GUC_dog_stringWrite("VWXYZ1234567890", 0xff);
+  42   2            Wait_ms(500);
+  43   2            
+  44   2         } //End while(1)
+  45   1      }
+  46          
+  47          void Wait_ms(unsigned int ms)
+  48          {
+  49   1         SFRPAGE = CONFIG_PAGE;
+  50   1         TR5 = 1; //start timer5
+  51   1         while (ms)
+  52   1         {
+  53   2            while (!TF5H);
+  54   2            --ms;
+C51 COMPILER V9.60.0.0   MAIN                                                              01/20/2020 15:24:49 PAGE 2   
+
+  55   2            TF5H = 0;
+  56   2         }
+  57   1         TR5 = 0; //stop timer 5
+  58   1         SFRPAGE = LEGACY_PAGE;
+  59   1      }
+  60          
+  61          void Timer5Init()
+  62          {
+  63   1         SFRPAGE   = CONFIG_PAGE;
+  64   1         CKCON1    = 0x04;         // SYSCLK
+  65   1         TMR5CN    = 0x04;         // enable timer 5
+  66   1         TMR5RLL   = 0x20;         // 0xD120
+  67   1         TMR5RLH   = 0xD1;         // 1ms
+  68   1         TMR5L     = 0x20;
+  69   1         TMR5H     = 0xD1;
+  70   1         SFRPAGE   = LEGACY_PAGE;
+  71   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    237    ----
+   CONSTANT SIZE    =     83    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

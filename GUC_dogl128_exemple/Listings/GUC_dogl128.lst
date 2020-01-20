@@ -1,0 +1,473 @@
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE GUC_DOGL128
+OBJECT MODULE PLACED IN .\Objects\GUC_dogl128.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE GUC_dogl128.c OPTIMIZE(0,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listin
+                    -gs\GUC_dogl128.lst) TABS(3) OBJECT(.\Objects\GUC_dogl128.obj)
+
+line level    source
+
+   1          #include <GUC_dogl128.h>
+   2          
+   3          
+   4          #if GUC_DOG_CFG_FONT_COMPILE_DEFAULT == 1
+   5          code const unsigned char __gucdog_default_font[]=
+   6          {//95 5x8 Char
+   7             
+   8             5, //Size in X of a char
+   9             
+  10             32, //Zero(offset)
+  11             95, //Size in number of char
+  12             
+  13             0x00,0x00, //Space
+  14             0x00,0x00,
+  15             0x00,
+  16             0x00,0x00, //!
+  17             0x9E,0x00,
+  18             0x00,
+  19             0x00,0x0E, //"
+  20             0x00,0x0E,
+  21             0x00,
+  22             0x28,0xFE, //#
+  23             0x28,0xFE,
+  24             0x28,
+  25             0x48,0x54, //$
+  26             0xFE,0x54,
+  27             0x24,
+  28             0x46,0x26, //%
+  29             0x10,0xC8,
+  30             0xC4,
+  31             0x6C,0x92, //&
+  32             0xAA,0x44,
+  33             0xA0,
+  34             0x00,0x0A, //'
+  35             0x06,0x00,
+  36             0x00,
+  37             0x00,0x38, //(
+  38             0x44,0x82,
+  39             0x00,
+  40             0x00,0x82, //)
+  41             0x44,0x38,
+  42             0x00,
+  43             0x28,0x10, //*
+  44             0x7C,0x10,
+  45             0x28,
+  46             0x10,0x10, //+
+  47             0x7C,0x10,
+  48             0x10,
+  49             0x00,0xA0, //,
+  50             0x60,0x00,
+  51             0x00,
+  52             0x10,0x10, //-
+  53             0x10,0x10,
+  54             0x10,
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 2   
+
+  55             0x00,0xC0, //.
+  56             0xC0,0x00,
+  57             0x00,
+  58             0x40,0x20, ///
+  59             0x10,0x08,
+  60             0x04,
+  61             
+  62             0x7C,0xA2, //0
+  63             0x92,0x8A,
+  64             0x7C,
+  65             0x80,0x84, //1
+  66             0xFE,0x80,
+  67             0x80,
+  68             0x84,0xC2, //2
+  69             0xA2,0x92,
+  70             0x8C,
+  71             0x42,0x82, //3
+  72             0x8A,0x96,
+  73             0x62,
+  74             0x30,0x28, //4
+  75             0x24,0xFE,
+  76             0x20,
+  77             0x8E,0x8A, //5
+  78             0x8A,0x8A,
+  79             0x72,
+  80             0x78,0x94, //6
+  81             0x92,0x92,
+  82             0x70,
+  83             0x02,0xE2, //7
+  84             0x12,0x0A,
+  85             0x06,
+  86             0x6C,0x92, //8
+  87             0x92,0x92,
+  88             0x6C,
+  89             0x0C,0x92, //9
+  90             0x92,0x52,
+  91             0x3C,
+  92             
+  93             0x00,0x6C, //:
+  94             0x6C,0x00,
+  95             0x00,
+  96             0x00,0xAC, //;
+  97             0x6C,0x00,
+  98             0x00,
+  99             0x10,0x28, //<
+ 100             0x44,0x82,
+ 101             0x00,
+ 102             0x28,0x28, //=
+ 103             0x28,0x28,
+ 104             0x28,
+ 105             0x00,0x82, //>
+ 106             0x44,0x28,
+ 107             0x10,
+ 108             0x04,0x02, //?
+ 109             0xA2,0x12,
+ 110             0x0C,
+ 111             0x64,0x92, //@
+ 112             0xF2,0x82,
+ 113             0x7C,
+ 114             
+ 115             0xFC,0x22, //A
+ 116             0x22,0x22,
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 3   
+
+ 117             0xFC,
+ 118             0xFE,0x92, //B
+ 119             0x92,0x92,
+ 120             0x6C,
+ 121             0x7C,0x82, //C
+ 122             0x82,0x82,
+ 123             0x44,
+ 124             0xFE,0x82, //D
+ 125             0x82,0x44,
+ 126             0x38,
+ 127             0xFE,0x92, //E
+ 128             0x92,0x92,
+ 129             0x82,
+ 130             0xFE,0x12, //F
+ 131             0x12,0x12,
+ 132             0x02,
+ 133             0x7C,0x82, //G
+ 134             0x92,0x92,
+ 135             0xF4,
+ 136             0xFE,0x10, //H
+ 137             0x10,0x10,
+ 138             0xFE,
+ 139             0x82,0x82, //I
+ 140             0xFE,0x82,
+ 141             0x82,
+ 142             0x40,0x80, //J
+ 143             0x82,0x7E,
+ 144             0x02,
+ 145             0xFE,0x10, //K
+ 146             0x28,0x44,
+ 147             0x82,
+ 148             0xFE,0x80, //L
+ 149             0x80,0x80,
+ 150             0x80,
+ 151             0xFE,0x04, //M
+ 152             0x18,0x04,
+ 153             0xFE,
+ 154             0xFE,0x08, //N
+ 155             0x10,0x20,
+ 156             0xFE,
+ 157             0x7C,0x82, //O
+ 158             0x82,0x82,
+ 159             0x7C,
+ 160             0xFE,0x12, //P
+ 161             0x12,0x12,
+ 162             0x0C,
+ 163             0x7C,0x82, //Q
+ 164             0xA2,0x42,
+ 165             0xBC,
+ 166             0xFE,0x12, //R
+ 167             0x32,0x52,
+ 168             0x8C,
+ 169             0x8C,0x92, //S
+ 170             0x92,0x92,
+ 171             0x62,
+ 172             0x02,0x02, //T
+ 173             0xFE,0x02,
+ 174             0x02,
+ 175             0x7E,0x80, //U
+ 176             0x80,0x80,
+ 177             0x7E,
+ 178             0x3E,0x40, //V
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 4   
+
+ 179             0x80,0x40,
+ 180             0x3E,
+ 181             0x7E,0x80, //W
+ 182             0x70,0x80,
+ 183             0x7E,
+ 184             0xC6,0x28, //X
+ 185             0x10,0x28,
+ 186             0xC6,
+ 187             0x0E,0x10, //Y
+ 188             0xE0,0x10,
+ 189             0x0E,
+ 190             0xC2,0xA2, //Z
+ 191             0x92,0x8A,
+ 192             0x86,
+ 193          
+ 194             0x00,0xFE, //[
+ 195             0x82,0x82,
+ 196             0x00,
+ 197             0x04,0x08, //'\'
+ 198             0x10,0x20,
+ 199             0x40,
+ 200             0x00,0x82, //]
+ 201             0x82,0xFE,
+ 202             0x00,
+ 203             0x08,0x04, //^
+ 204             0x02,0x04,
+ 205             0x08,
+ 206             0x80,0x80, //_
+ 207             0x80,0x80,
+ 208             0x80,
+ 209             0x00,0x02, //`
+ 210             0x04,0x08,
+ 211             0x00,
+ 212             
+ 213             0x40,0xA8, //a
+ 214             0xA8,0xA8,
+ 215             0xF0,
+ 216             0xFE,0x90, //b
+ 217             0x88,0x88,
+ 218             0x70,
+ 219             0x70,0x88, //c
+ 220             0x88,0x88,
+ 221             0x40,
+ 222             0x70,0x88, //d
+ 223             0x88,0x90,
+ 224             0xFE,
+ 225             0x70,0xA8, //e
+ 226             0xA8,0xA8,
+ 227             0x30,
+ 228             0x10,0xFC, //f
+ 229             0x12,0x02,
+ 230             0x04,
+ 231             0x18,0xA4, //g
+ 232             0xA4,0xA4,
+ 233             0x7C,
+ 234             0xFE,0x10, //h
+ 235             0x08,0x08,
+ 236             0xF0,
+ 237             0x00,0x88, //i
+ 238             0xFA,0x80,
+ 239             0x00,
+ 240             0x40,0x80, //j
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 5   
+
+ 241             0x80,0x7A,
+ 242             0x00,
+ 243             0xFE,0x20, //k
+ 244             0x50,0x88,
+ 245             0x00,
+ 246             0x00,0x82, //l
+ 247             0xFE,0x80,
+ 248             0x00,
+ 249             0xF8,0x08, //m
+ 250             0x30,0x08,
+ 251             0xF0,
+ 252             0xF8,0x10, //n
+ 253             0x08,0x08,
+ 254             0xF0,
+ 255             0x70,0x88, //o
+ 256             0x88,0x88,
+ 257             0x70,
+ 258             0xF8,0x28, //p
+ 259             0x28,0x28,
+ 260             0x10,
+ 261             0x10,0x28, //q
+ 262             0x28,0x30,
+ 263             0xF8,
+ 264             0xF8,0x10, //r
+ 265             0x08,0x08,
+ 266             0x10,
+ 267             0x90,0xA8, //s
+ 268             0xA8,0xA8,
+ 269             0x40,
+ 270             0x08,0x7E, //t
+ 271             0x88,0x80,
+ 272             0x40,
+ 273             0x78,0x80, //u
+ 274             0x80,0x40,
+ 275             0xF8,
+ 276             0x38,0x40, //v
+ 277             0x80,0x40,
+ 278             0x38,
+ 279             0x78,0x80, //w
+ 280             0x60,0x80,
+ 281             0x78,
+ 282             0x88,0x50, //x
+ 283             0x20,0x50,
+ 284             0x88,
+ 285             0x18,0xA0, //y
+ 286             0xA0,0xA0,
+ 287             0x78,
+ 288             0x88,0xC8, //z
+ 289             0xA8,0x98,
+ 290             0x88,
+ 291          
+ 292             0x00,0x10, //{
+ 293             0x6C,0x82,
+ 294             0x00,
+ 295             0x00,0x00, //|
+ 296             0xFE,0x00,
+ 297             0x00,
+ 298             0x00,0x82, //}
+ 299             0x6C,0x10,
+ 300             0x00,
+ 301             0x10,0x08, //~
+ 302             0x10,0x20,
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 6   
+
+ 303             0x10,
+ 304             0x00,0x00, //¦
+ 305             0xEE,0x00,
+ 306             0x00
+ 307          };
+ 308          xdata unsigned char* __gucdog_font_data=__gucdog_default_font;
+ 309          #else
+              xdata unsigned char* __gucdog_font_data;
+              #endif //GUC_DOG_CFG_FONT_COMPILE_DEFAULT
+ 312          
+ 313          void GUC_dog_init()
+ 314          {
+ 315   1         GUC_DOG_CS = 1;
+ 316   1         GUC_DOG_CS = 0;
+ 317   1         #if GUC_DOG_CFG_OUTPUT == GUC_DOG_CFG_OUTPUT_SPISIMULATE
+ 318   1            GUC_DOG_SCLK = 0;
+ 319   1         #endif //GUC_DOG_CFG_OUTPUT_SPISIMULATE
+ 320   1         
+ 321   1         GUC_dog_sendByte(0x40, 0); //Display start line 0
+ 322   1         GUC_dog_sendByte(0xA1, 0); //ADC reverse *)
+ 323   1         GUC_dog_sendByte(0xC0, 0); //Normal COM0~COM63
+ 324   1         GUC_dog_sendByte(0xA6, 0); //Display normal
+ 325   1         GUC_dog_sendByte(0xA2, 0); //Set bias 1/9 (Duty 1/65)
+ 326   1         GUC_dog_sendByte(0x2F, 0); //Booster, Regulator and Follower on
+ 327   1         GUC_dog_sendByte(0xF8, 0); //Set internal Booster to 4x
+ 328   1         GUC_dog_sendByte(0x00, 0); //Set internal Booster to 4x
+ 329   1         GUC_dog_sendByte(0x27, 0); //V0 voltage regulator set
+ 330   1         GUC_dog_sendByte(0x81, 0); //Contrast set
+ 331   1         GUC_dog_sendByte(0x10, 0); //Contrast set
+ 332   1         GUC_dog_sendByte(0xAC, 0); //No indicator
+ 333   1         GUC_dog_sendByte(0x00, 0); //No indicator
+ 334   1         GUC_dog_sendByte(0xAF, 0); //Display on
+ 335   1      
+ 336   1         GUC_dog_sendByte(0xB0, 0); //Page 0
+ 337   1      }
+ 338          
+ 339          #if GUC_DOG_CFG_OUTPUT == GUC_DOG_CFG_OUTPUT_SPI3WIRE
+              void GUC_dog_sendByte(const unsigned char _byte, bit _a0)
+              {
+                 GUC_DOG_A0 = _a0;
+              
+                 SPIF = 0;
+                 SPI0DAT = _byte;
+                 while (!SPIF);
+                 SPIF = 0;
+              }
+              #endif //GUC_DOG_CFG_OUTPUT_SPI3WIRE
+ 350          
+ 351          #if GUC_DOG_CFG_OUTPUT == GUC_DOG_CFG_OUTPUT_SPISIMULATE
+ 352          void GUC_dog_sendByte(const unsigned char _byte, bit _a0)
+ 353          {
+ 354   1         unsigned char i;
+ 355   1      
+ 356   1         GUC_DOG_A0 = _a0;
+ 357   1      
+ 358   1         for (i=0; i<8; ++i)
+ 359   1         {
+ 360   2            GUC_DOG_MOSI = _byte&(0x80>>i);
+ 361   2            GUC_DOG_SCLK = 1;
+ 362   2            GUC_DOG_SCLK = 0;
+ 363   2         }
+ 364   1      }
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 7   
+
+ 365          #endif //GUC_DOG_CFG_OUTPUT_SPISIMULATE
+ 366          
+ 367          void GUC_dog_setCursorPos(const unsigned char _page, const unsigned char _row)
+ 368          {
+ 369   1         GUC_dog_sendByte(0xB0|(_page&0x0F), 0); //Set page X
+ 370   1         GUC_dog_sendByte(0x00|(_row&0x0F), 0); //Least significant address
+ 371   1         GUC_dog_sendByte(0x10|(_row>>4), 0); //Most significant address
+ 372   1      }
+ 373          
+ 374          void GUC_dog_clearScreen(const unsigned char _value)
+ 375          {
+ 376   1         unsigned char page, row;
+ 377   1      
+ 378   1         for (page=0; page<8; ++page)
+ 379   1         {
+ 380   2            GUC_dog_sendByte(0xB0|page, 0); //Set page X
+ 381   2            GUC_dog_sendByte(0x00, 0); //Least significant address
+ 382   2            GUC_dog_sendByte(0x10, 0); //Most significant address
+ 383   2            for (row=0; row<128; ++row)
+ 384   2            {
+ 385   3               GUC_dog_sendByte(_value, 1); //Write
+ 386   3            }
+ 387   2         }
+ 388   1      }
+ 389          
+ 390          void GUC_dog_charWrite(unsigned char _valueChar, const unsigned char _invert)
+ 391          {//GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE
+ 392   1         unsigned char x;
+ 393   1         unsigned short addressValue;
+ 394   1         
+ 395   1         _valueChar -= __gucdog_font_data[_GUC_DOG_FONT_ZERO];
+ 396   1         
+ 397   1         if ( _valueChar >= __gucdog_font_data[_GUC_DOG_FONT_SIZE] )
+ 398   1         {
+ 399   2            return;
+ 400   2         }
+ 401   1         
+ 402   1         #if GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE == 1
+                 addressValue = _valueChar*__gucdog_font_data[_GUC_DOG_FONT_X] + _GUC_DOG_FONT_HEADER_SIZE;
+                 #else
+ 405   1         addressValue = _valueChar*_GUC_DOG_FONT_DEFAULT_SIZEX + _GUC_DOG_FONT_HEADER_SIZE;
+ 406   1         #endif //GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE
+ 407   1         
+ 408   1         
+ 409   1         #if GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE == 1
+                 for (x=0; x<__gucdog_font_data[_GUC_DOG_FONT_X]; ++x)
+                 #else
+ 412   1         for (x=0; x<_GUC_DOG_FONT_DEFAULT_SIZEX; ++x)
+ 413   1         #endif //GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE
+ 414   1         {
+ 415   2            GUC_dog_sendByte(__gucdog_font_data[addressValue++] ^ _invert, 1); //Write
+ 416   2         }
+ 417   1      
+ 418   1         GUC_dog_sendByte(_invert, 1); //Write
+ 419   1      }
+ 420          
+ 421          void GUC_dog_stringWrite(const unsigned char* _str, const unsigned char _invert)
+ 422          {
+ 423   1         while ( *_str )
+ 424   1         {
+ 425   2            GUC_dog_charWrite( *(_str++), _invert);
+ 426   2         }
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 8   
+
+ 427   1      }
+ 428          void GUC_dog_pstringWrite(const unsigned char* _str, const unsigned char _invert)
+ 429          {
+ 430   1         unsigned char i;
+ 431   1         for (i=1; i<_str[0]; ++i)
+ 432   1         {
+ 433   2            GUC_dog_charWrite( _str[i], _invert);
+ 434   2         }
+ 435   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    553    ----
+   CONSTANT SIZE    =    483    ----
+   XDATA SIZE       =      3    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     21    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
