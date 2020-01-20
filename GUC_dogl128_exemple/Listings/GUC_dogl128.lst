@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 1   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE GUC_DOGL128
@@ -62,7 +62,7 @@ line level    source
   52             0x10,0x10, //-
   53             0x10,0x10,
   54             0x10,
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 2   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 2   
 
   55             0x00,0xC0, //.
   56             0xC0,0x00,
@@ -126,7 +126,7 @@ line level    source
  114             
  115             0xFC,0x22, //A
  116             0x22,0x22,
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 3   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 3   
 
  117             0xFC,
  118             0xFE,0x92, //B
@@ -190,7 +190,7 @@ line level    source
  176             0x80,0x80,
  177             0x7E,
  178             0x3E,0x40, //V
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 4   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 4   
 
  179             0x80,0x40,
  180             0x3E,
@@ -254,7 +254,7 @@ line level    source
  238             0xFA,0x80,
  239             0x00,
  240             0x40,0x80, //j
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 5   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 5   
 
  241             0x80,0x7A,
  242             0x00,
@@ -318,7 +318,7 @@ line level    source
  300             0x00,
  301             0x10,0x08, //~
  302             0x10,0x20,
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 6   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 6   
 
  303             0x10,
  304             0x00,0x00, //¦
@@ -382,7 +382,7 @@ line level    source
  362   2            GUC_DOG_SCLK = 0;
  363   2         }
  364   1      }
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 7   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 7   
 
  365          #endif //GUC_DOG_CFG_OUTPUT_SPISIMULATE
  366          
@@ -446,7 +446,7 @@ line level    source
  424   1         {
  425   2            GUC_dog_charWrite( *(_str++), _invert);
  426   2         }
-C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 15:24:49 PAGE 8   
+C51 COMPILER V9.60.0.0   GUC_DOGL128                                                       01/20/2020 18:43:29 PAGE 8   
 
  427   1      }
  428          void GUC_dog_pstringWrite(const unsigned char* _str, const unsigned char _invert)

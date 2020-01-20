@@ -5,13 +5,19 @@
 * GUC_DogL128 LIB       *
 |***********************|
 * Author : Guillaume G. *
-* Version : 1.0         *
-* Date : 31.10.2018     *
+* Version : 1.1         *
+* Date : 20.01.2020     *
 \***********************/
 
-/* CHANGELOG 1.0
+/*
+CHANGELOG 1.0
 
 - Creating the LIB
+
+CHANGELOG 1.1
+
+- Adding "GUC_dog_setStat"
+- Setting default output to "GUC_DOG_CFG_OUTPUT_SPISIMULATE"
 */
 
 
@@ -114,8 +120,12 @@ void GUC_dog_pstringWrite(const unsigned char* _str, const unsigned char _invert
 * FUNCTION MACRO *
 \****************/
 
+//Set display 1:ON, 0:OFF.
+#define GUC_dog_setStat(_stat) GUC_dog_sendByte(_stat ? 0xAF : 0xAE, 0)
+
 //Write a byte where the cursor is.
 #define GUC_dog_write(_byte) GUC_dog_sendByte(_byte, 1)
+
 //Set the cursor position relative to the character X size, _page 0 to 7, _pos.
 #if GUC_DOG_CFG_FONT_CUSTOMISABLE_SIZE == 1
 #define GUC_dog_setCharPos(_page, _pos) GUC_dog_setCursorPos(_page, _pos*(__gucdog_font_data[_GUC_DOG_FONT_X]+1))
