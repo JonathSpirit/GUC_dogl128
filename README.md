@@ -10,8 +10,7 @@ https://www.lcd-module.com/eng/pdf/grafik/dogl128-6e.pdf
 
 <img src="images/GUC_dogl128.JPG" alt="GUC_dogl128" width="400"/>
 
-> Working version : 1.1\
-> Actual version : 1.1
+> Actual version : 2.0
 
 ## Compatible (tested) microcontroller
 
